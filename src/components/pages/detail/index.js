@@ -24,7 +24,9 @@ export default function Detail() {
             <Route path='/detail/history'>
               <HistoryDetail />
             </Route>
-            <Route path='/detail/'>This is DETAIL page!</Route>
+            <Route path='/detail/'>
+              <NewDetail />
+            </Route>
           </Switch>
         </Col>
       </Row>
