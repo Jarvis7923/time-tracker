@@ -1,9 +1,11 @@
-import React from 'react';
+import React from "react";
+import MainNav from "../../MainNav";
 
-export default function Contact() {
-    return (
-        <div className="contact-page">
-            This is CONTACT page!
-        </div>
-    );
+export default function About() {
+  return (
+    <div className='contact-page'>
+      <MainNav />
+      <h1>This is CONTACT page!</h1>
+    </div>
+  );
 }

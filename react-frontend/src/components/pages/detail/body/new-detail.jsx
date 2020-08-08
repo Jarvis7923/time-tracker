@@ -1,7 +1,6 @@
 import React from "react";
 import {Button, Row, Col, Form} from "react-bootstrap";
 
-
 const LegendRow = (props)=>{
   return (
     <Row noGutters>
@@ -103,6 +102,20 @@ const AddNewProject = (props) => {
   );
 };
 
+
+const DailySummery = () => {
+  return (
+    <Row noGutters>
+      <Col sm='6'>
+        Current Work Summery
+      </Col>
+      <Col sm='6'>
+        Life Summery
+      </Col>
+    </Row>
+    );
+}
+
 export default function HistoryDetail() {
   return (
     <Row noGutters>
@@ -118,6 +131,7 @@ export default function HistoryDetail() {
         <InputRow />
 
         <Button>Update</Button>
+        <DailySummery />
       </Col>
       <Col sm='5'>
         <ProjectList />

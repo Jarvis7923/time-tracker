@@ -1,4 +1,6 @@
 import React from 'react';
+import {Button} from 'react-bootstrap';
+
 import MainNav from "../../MainNav";
 
 
@@ -6,7 +8,8 @@ export default function Index() {
     return (
       <div className='index-page'>
           <MainNav/>
-        <h1 style={{marginTop:"50px"}}>This is INDEX page! </h1>
+        <h1>This is INDEX page! </h1>
+        <Button href="/detail">Detail</Button>
       </div>
     );
 }

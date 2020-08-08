@@ -4,6 +4,7 @@ import { Route, Switch } from "react-router-dom";
 
 import HistoryDetail from "./body/history-detail";
 import NewDetail from "./body/new-detail";
+import ProjectDetail from "./body/project-detail";
 
 import SideNav from "./SideNav";
 import MainNav from "../../MainNav";
@@ -13,7 +14,7 @@ export default function Detail() {
     <div className='detail-page'>
       <MainNav />
       <Row noGutters>
-        <Col sm="2">
+        <Col sm="1">
           <SideNav />
         </Col>
         <Col>
@@ -23,6 +24,9 @@ export default function Detail() {
             </Route>
             <Route path='/detail/history'>
               <HistoryDetail />
+            </Route>
+            <Route path='/detail/project'>
+              <ProjectDetail />
             </Route>
             <Route path='/detail/'>
               <NewDetail />

@@ -13,6 +13,7 @@ export default function SideNav() {
     <Nav defaultActiveKey={path + "/new"} className='flex-column'>
       <Nav.Link href={path + "/new"}>New</Nav.Link>
       <Nav.Link href={path + "/history"}>History</Nav.Link>
+      <Nav.Link href={path + "/project"}>Project</Nav.Link>
       {/* <Nav.Link href='link-1'>Link</Nav.Link> */}
     </Nav>
   );
