@@ -9,7 +9,7 @@ export default function Index() {
       <div className='index-page'>
           <MainNav/>
         <h1>This is INDEX page! </h1>
-        <Button href="/detail">Detail</Button>
+        <Button href="/user">Go to User Page</Button>
       </div>
     );
 }
