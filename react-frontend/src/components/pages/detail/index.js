@@ -35,6 +35,9 @@ export default function Detail() {
             <Route path='/detail/'>
               <TodayPage />
             </Route>
+            <Route path='/detail/settings'>
+              <SettingsPage />
+            </Route>
           </Switch>
         </Col>
         <Col sm="3">
