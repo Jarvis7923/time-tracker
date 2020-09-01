@@ -11,7 +11,7 @@ export default function SideNav() {
     <Nav defaultActiveKey={path + "/new"} className='flex-column' style={{textAlign:"center"}}>
       <Image src={userDefaultImage} roundedCircle fluid style={{width:"50pt", margin:"auto"}}/>     
       <Nav.Link href={path + "/today"}>Today's</Nav.Link>
-      <Nav.Link href={path + "/summery"}>Summery</Nav.Link>
+      <Nav.Link href={path + "/summary"}>Summery</Nav.Link>
       <Nav.Link href={path + "/history"}>History</Nav.Link>
       <Nav.Link href={path + "/settings"}>Settings</Nav.Link>
       {/* <Nav.Link href='link-1'>Link</Nav.Link> */}

@@ -27,7 +27,7 @@ export default function UserPage() {
             <Route path='/user/history'>
               <HistoryPage />
             </Route>
-            <Route path='/detail/summary'>
+            <Route path='/user/summary'>
               <SummaryPage />
             </Route>
             <Route path='/user/settings'>
