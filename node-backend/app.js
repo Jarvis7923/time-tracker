@@ -22,8 +22,8 @@ app.delete('/', (req, res) => {
 app.set('port', port);
 
 // testing rest api with dynamic routing
-app.get('/:id', (req, res) => {
-  return res.send('Received a GET HTTP method ' + req.params.id);
+app.get('/:id1/:id2', (req, res) => {
+  return res.send('Received a GET HTTP method ' + req.params.id1 + " " + req.params.id2);
 });
 
 app.listen(port, () => {

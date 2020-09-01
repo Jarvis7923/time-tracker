@@ -1,8 +1,7 @@
 import React from "react";
 
-import { Nav } from "react-bootstrap";
+import { Nav, Image } from "react-bootstrap";
 // import { useLocation } from 'react-router-dom'
-
 
 
 export default function SideNav() {
@@ -11,9 +10,11 @@ export default function SideNav() {
   
   return (
     <Nav defaultActiveKey={path + "/new"} className='flex-column'>
-      <Nav.Link href={path + "/new"}>New</Nav.Link>
+      <Image src=""/>     
+      <Nav.Link href={path + "/today"}>Today's</Nav.Link>
+      <Nav.Link href={path + "/summery"}>New</Nav.Link>
       <Nav.Link href={path + "/history"}>History</Nav.Link>
-      <Nav.Link href={path + "/project"}>Project</Nav.Link>
+      <Nav.Link href={path + "/settings"}>Settings</Nav.Link>
       {/* <Nav.Link href='link-1'>Link</Nav.Link> */}
     </Nav>
   );
