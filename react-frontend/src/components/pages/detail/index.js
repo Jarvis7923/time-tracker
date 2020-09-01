@@ -5,6 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import HistoryDetail from "./body/history-detail";
 import NewDetail from "./body/new-detail";
 import ProjectDetail from "./body/project-detail";
+import SettingsPage from "./body/settings";
 
 import SideNav from "./SideNav";
 import MainNav from "../../MainNav";
@@ -30,6 +31,9 @@ export default function Detail() {
             </Route>
             <Route path='/detail/'>
               <NewDetail />
+            </Route>
+            <Route path='/detail/settings'>
+              <SettingsPage />
             </Route>
           </Switch>
         </Col>
