@@ -5,7 +5,7 @@ import { Route, Switch } from "react-router-dom";
 import HistoryPage from "./body/history";
 import TodayPage from "./body/today";
 import SettingsPage from "./body/settings";
-import SummeryPage from "./body/summery";
+import SummaryPage from "./body/summary";
 
 import SideNav from "./SideNav";
 import MainNav from "../../MainNav";
@@ -26,8 +26,8 @@ export default function Detail() {
             <Route path='/detail/history'>
               <HistoryPage />
             </Route>
-            <Route path='/detail/summery'>
-              <SummeryPage />
+            <Route path='/detail/summary'>
+              <SummaryPage />
             </Route>
             <Route path='/detail/settings'>
               <SettingsPage />

@@ -1,5 +1,13 @@
 import React from "react";
 
+const UserProfile = () => {
+    return (
+        <div>
+            
+        </div>
+    );
+}
+
 export default function SettingsPage() {
   return (
     <div>
@@ -7,4 +15,6 @@ export default function SettingsPage() {
     </div>
     );
 }
+
+
 
