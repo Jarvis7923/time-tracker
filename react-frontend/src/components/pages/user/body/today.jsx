@@ -119,7 +119,7 @@ const DailySummery = () => {
 export default function HistoryDetail() {
   return (
     <Row noGutters>
-      <Col sm='7'>
+      <Col>
         <LegendRow />
         <br />
         <DataRow />
@@ -133,10 +133,10 @@ export default function HistoryDetail() {
         <Button>Update</Button>
         <DailySummery />
       </Col>
-      <Col sm='5'>
+      {/* <Col sm='5'>
         <ProjectList />
         <AddNewProject />
-      </Col>
+      </Col> */}
     </Row>
   );
 }
