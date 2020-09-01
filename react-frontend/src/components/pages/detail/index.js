@@ -2,9 +2,10 @@ import React from "react";
 import { Row, Col } from "react-bootstrap";
 import { Route, Switch } from "react-router-dom";
 
-import HistoryDetail from "./body/history-detail";
-import NewDetail from "./body/new-detail";
-import ProjectDetail from "./body/project-detail";
+import HistoryPage from "./body/history";
+import TodayPage from "./body/today";
+import SettingsPage from "./body/settings";
+import SummeryPage from "./body/summery";
 
 import SideNav from "./SideNav";
 import MainNav from "../../MainNav";
@@ -14,24 +15,30 @@ export default function Detail() {
     <div className='detail-page'>
       <MainNav />
       <Row noGutters>
-        <Col sm="1">
+        <Col sm="2">
           <SideNav />
         </Col>
         <Col>
           <Switch>
-            <Route path='/detail/new'>
-              <NewDetail />
+            <Route path='/detail/today'>
+              <TodayPage />
             </Route>
             <Route path='/detail/history'>
-              <HistoryDetail />
+              <HistoryPage />
             </Route>
-            <Route path='/detail/project'>
-              <ProjectDetail />
+            <Route path='/detail/summery'>
+              <SummeryPage />
+            </Route>
+            <Route path='/detail/settings'>
+              <SettingsPage />
             </Route>
             <Route path='/detail/'>
-              <NewDetail />
+              <TodayPage />
             </Route>
           </Switch>
+        </Col>
+        <Col sm="3">
+          Reminder
         </Col>
       </Row>
     </div>
