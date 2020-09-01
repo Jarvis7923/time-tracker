@@ -9,10 +9,11 @@ import SummaryPage from "./body/summary";
 
 import SideNav from "./SideNav";
 import MainNav from "../../MainNav";
+import Reminder from "./reminder";
 
-export default function Detail() {
+export default function UserPage() {
   return (
-    <div className='detail-page'>
+    <div className='user-page'>
       <MainNav />
       <Row noGutters>
         <Col sm="2">
@@ -20,28 +21,28 @@ export default function Detail() {
         </Col>
         <Col>
           <Switch>
-            <Route path='/detail/today'>
+            <Route path='/user/today'>
               <TodayPage />
             </Route>
-            <Route path='/detail/history'>
+            <Route path='/user/history'>
               <HistoryPage />
             </Route>
             <Route path='/detail/summary'>
               <SummaryPage />
             </Route>
-            <Route path='/detail/settings'>
+            <Route path='/user/settings'>
               <SettingsPage />
             </Route>
-            <Route path='/detail/'>
+            <Route path='/user/'>
               <TodayPage />
             </Route>
-            <Route path='/detail/settings'>
+            <Route path='/user/settings'>
               <SettingsPage />
             </Route>
           </Switch>
         </Col>
         <Col sm="3">
-          Reminder
+          <Reminder />
         </Col>
       </Row>
     </div>
