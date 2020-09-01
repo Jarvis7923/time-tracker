@@ -1,4 +1,21 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+detail page:
+date, time, category(dropdown), event name(dropdown), description(text), note(text), tag(multi select box headache)  
+
+- create category,  
+- create event, 
+- create tag, 
+
+side nav bar tag:
+- today's summury
+- settings(manage tag, category and event)
+- old summery
+- history
+- new
+- project milestone.
+
+
+Change it to Material UI 
+
 
 ## Available Scripts
 

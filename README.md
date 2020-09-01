@@ -1,5 +1,6 @@
 # time-tracker
-personal time management website with React.js as the front-end framework and flask as the back-end
+personal time management website with MERN stack
 
-Mongo DB as the cloud data base
+MongoDB as database, Express.js, React.js and Node.js as the front and back end framework. 
+
 
